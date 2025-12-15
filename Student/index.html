@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Info Card Generater</h1>
+
+    <div class="container">
+
+      
+        <div class="form-box">
+            <label>Student Name :</label>
+            <input type="text" id="name">
+
+            <label>Roll Number :</label>
+            <input type="number" id="roll">
+
+            <label>Student Email :</label>
+            <input type="email" id="email">
+
+            <label>Student Age :</label>
+            <input type="number" id="age">
+
+            <label>Gender :</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Male"> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female
+            </div>
+
+            <label>Course :</label>
+            <div class="course">
+                <input type="checkbox" id="web" value="Web"> Web
+                <input type="checkbox" id="ds" value="DataScience"> DataScience
+            </div>
+
+            <label>Marks :</label>
+            <h3><span id="markValue">50</span> /100</h3>
+            <input type="range" id="marks" min="0" max="100" value="50">
+
+            <label>Upload Student Photo</label>
+            <input type="file" id="photo">
+
+            <button id="generate">Generate Card</button>
+        </div>
+
+
+        <div class="card-box" id="card">
+            <img id="profileImg" src="" alt="">
+            <h2 id="c_name">Student Name:</h2>
+            <p id="c_roll"></p>
+            <p id="c_email"></p>
+            <p id="c_age"></p>
+            <p id="c_gender"></p>
+            <p id="c_course"></p>
+            <p id="c_marks"></p>
+
+            <button id="download">Download Card</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
